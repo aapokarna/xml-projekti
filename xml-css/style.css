@@ -1,0 +1,22 @@
+tietoa {
+display: block;
+margin: 20px;
+border: 1px solid black;
+padding: 10px;
+background-color: rgb(148, 148, 148);
+border-radius: 14px;
+width: 500px;
+text-align: center;
+
+}
+
+nimi {
+    display: block;
+}
+
+ohjaaja {
+    display: block;
+}
+ikaraja {
+    display: block;
+}

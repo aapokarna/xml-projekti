@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>elokuvat</title>
+</head>
+<body>
+
+    <h1>Elokuvat</h1>
+    <button onclick="lataa()">Elokuvat</button>
+    <div id="data3"></div>
+    
+    <script>
+    function lataa(){
+        const xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+            parseXML(this);
+        }
+        };
+        xhttp.open("GET", "data3.xml", true);
+        xhttp.send();
+    } 
+    function parseXML(xml){
+        let i;
+        let htmlData = '<ul style="list-style-type: none; margin: 0;">';
+        const xmlDoc = xml.responseXML;
+        const tietoo = xmlDoc.getElementsByTagName("tietoa");
+        for (i = 0; i < tietoo.length; i++ ) {
+
+            htmlData += "<li>";
+            htmlData += "<h2>" + tietoo[i].getElementsByTagName("nimi")[0].childNodes[0].nodeValue + "</h2>";
+            htmlData += "<p>" + "<b> ohjaaja: </b>" + tietoo[i].getElementsByTagName("ohjaaja")[0].childNodes[0].nodeValue + "</p>";
+            htmlData += "<p>" + "<b> kesto: </b>" + tietoo[i].getElementsByTagName("kesto")[0].childNodes[0].nodeValue + "</p>";
+            htmlData += "<p>" + "<b> ikäraja: </b>" + tietoo[i].getElementsByTagName("ikaraja")[0].childNodes[0].nodeValue + "</p>";
+            htmlData += "</li>";
+        }
+        htmlData += "</ul>";
+        document.getElementById("data3").innerHTML = htmlData;
+    }
+</script>
+</body>
+</html>

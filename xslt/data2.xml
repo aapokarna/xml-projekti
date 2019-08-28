@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="style.xsl"?>
+
+<elokuva>
+    <tietoa>
+        <nimi>Apollo 11</nimi>
+        <ohjaaja>Todd Douglas Miller</ohjaaja>
+        <kesto> 1h 33min</kesto>
+        <ikaraja>Ei ole</ikaraja>
+    </tietoa>
+    <tietoa>
+        <nimi>Aurora</nimi>
+        <ohjaaja>Miia Tervo</ohjaaja>
+        <kesto>1h 46min</kesto>
+        <ikaraja>12</ikaraja>
+    </tietoa>
+    <tietoa>
+        <nimi>Angel Has Fallen</nimi>
+        <ohjaaja>Ric Roman Waugh</ohjaaja>
+        <kesto>2h 1min</kesto>
+        <ikaraja>16</ikaraja>
+    </tietoa>
+</elokuva>

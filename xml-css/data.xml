@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="style.css"?>
+
+<elokuva>
+    <tietoa>
+        <nimi>nimi: Apollo 11</nimi>
+        <ohjaaja>ohjaaja: Todd Douglas Miller</ohjaaja>
+        <kesto> kesto: 1h 33min</kesto>
+        <ikaraja>ikäraja:Ei ole</ikaraja>
+    </tietoa>
+    <tietoa>
+        <nimi>nimi: Aurora</nimi>
+        <ohjaaja>ohjaaja: Miia Tervo</ohjaaja>
+        <kesto>kesto: 1h 46min</kesto>
+        <ikaraja>ikäraja: 12</ikaraja>
+    </tietoa>
+    <tietoa>
+        <nimi>nimi: Angel Has Fallen</nimi>
+        <ohjaaja>ohjaaja: Ric Roman Waugh</ohjaaja>
+        <kesto>kesto: 2h 1min</kesto>
+        <ikaraja>ikäraja: 16</ikaraja>
+    </tietoa>
+</elokuva>
